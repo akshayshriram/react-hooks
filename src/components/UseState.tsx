@@ -1,7 +1,8 @@
 import { useState } from "react";
 
 const UseState = () => {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState<number>(0);
+
   return (
     <>
       <h1 className="mb-4">useState Hook</h1>
