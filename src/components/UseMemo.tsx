@@ -1,9 +1,14 @@
 import { useMemo, useState } from "react";
 import { initialItems } from "../constant/initialItems";
 
+type T = {
+  id: number;
+  isSelected: boolean;
+};
+
 const UseMemo = () => {
   const [count, setCount] = useState<number>(0);
-  const [items] = useState(initialItems);
+  const [items] = useState<Array<T>>(initialItems);
 
   //   const selectedItem = items.find((item) => item.isSelected); // Heavy Recalculation
 
